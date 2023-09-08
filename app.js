@@ -4,7 +4,6 @@ function setDate() {
     const currentDate = new Date()
     const currentDay = currentDate.getUTCDay()
     const currentMonth = currentDate.getMonth()
-    console.log(currentMonth)
     const currentYear = currentDate.getFullYear()
     const day2 = currentDate.getUTCDate()
     const daysOfWeek =[
