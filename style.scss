@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:"Quicksand", sans-serif;
+    font-weight: bold;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .displayPicture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .cover{
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            background-color:#0a4726;
+        }
+        .img{
+            height:11.5rem;
+            width: 11.5rem;
+            border-radius:50%;
+            position: absolute;
+            background-color: greenyellow;
+            img{
+                height:11.5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    .name{
+        p{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+.time{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    .day{
+        margin-right: .3rem;
+    }
+
+}
