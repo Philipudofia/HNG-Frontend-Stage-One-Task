@@ -19,6 +19,7 @@ function setDate() {
     let currentHour = String(currentDate.getUTCHours())
     let currentMinute = String(currentDate.getUTCMinutes())
     const seconds = currentDate.getUTCSeconds()
+    const milliseconds = currentDate.getUTCMilliseconds()
     day.textContent = dayOfTheWeek
     if (currentHour.length < 2) {
         currentHour = `0` + currentHour
@@ -27,10 +28,10 @@ function setDate() {
         currentMinute = `0` + currentMinute
     }
     time.textContent = `${day2}-${currentMonth + 1}-${currentYear} 
-    ${currentHour}:${currentMinute}:${seconds}`
+    ${currentHour}:${currentMinute}:${seconds}.${milliseconds}`
 }
 
-setInterval(setDate, 1000);
+setInterval(setDate, 100);
 
 const image = document.querySelector('.displayImage')
 image.src = 'philipUdofia.png'
